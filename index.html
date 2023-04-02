@@ -1,50 +1,203 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- ENCARGADO: ALEJANDRO -->
-<section>
-    <!-- barra-navbar - PRESENTACION - NOSOTROS ---- ENCARGADO: ALEJANDRO -->
-</section>
+    <section class="container vh-100" id="inicio">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light opacity transp barra"
+      >
+        <div class="container-fluid nav">
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2">
+              <li class="nav-item">
+                <a class="nav-link active li-1" aria-current="page" href="#inicio"
+                  >Inicio</a
+                >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nosotros"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Desarrolladores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex w-25">
+              <a href="#nosotros"><img src="./img/logo.png " class="img-fluid w-50" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="barra-vacia"></div>
+      <div class="contenido-principal mt-4 col">
+        <div class="imagen-p centrar">
+          <img src="./img/principal.png" class="img" alt="..." />
+        </div>
+        <div class="texto-principal mt-5 centrar">
+          <h1 class="fs-3 text slideInRight">CREATOR App & Weps</h1>
+          <p class="animacion p-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            placeat rem eligendi maiores animi illum! Minima commodi tempora,
+            minus assumenda dolore maiores repudiandae explicabo natus officiis
+            deserunt distinctio! Doloremque, praesentium. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Velit placeat rem eligendi
+            maiores animi illum! Minima commodi tempora, minus assumenda dolore
+            maiores repudiandae explicabo natus officiis deserunt distinctio!
+            Doloremque, praesentium.
+          </p>
+          <a href="#nosotros"><button
+            type="button"
+            class="btn btn-primary btn-lg bt-color zoomInDown">Mas Sobre Nosotros</button>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <!--seccion personal  -->
+
+    <section class="container vh-100 mt-5 cont" id="nosotros">
+      <h2 class="text-center pt-3 pb-3  ">Personal</h2>
 
 
-<!-- ENCARGADO: RODRIGO -->
-<section>
-    <!-- Personal de C/U <------  ENCARGADO: RODRIGO -->
-</section>
+      <div class="row   d-flex justify-content-center">
+        <div class="card m-3 p-0 " style="width:18rem">
+          <img src="./img/userF.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luisima Muller</h5>
+            <p class="card-text">Desarrolladora Web y Apps Responsive front-End</p>
+            <a href="#"><button
+              type="button"
+              class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+          </a>
+          </div>
+        </div>
+          <div class="card m-3 p-0  " style="width:18rem">
+            <img src="./img/userM.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nicolas Di Lorenzo</h5>
+              <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+              <a href="#"><button
+                type="button"
+                class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+            </a>
+            </div>
+          </div>
+             <div class="card m-3 p-0 " style="width:18rem">
+              <img src="./img/userM.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Alejandro Burgos</h5>
+                <p class="card-text">Desarrollador web full-Stack</p>
+                <a href="#"><button
+                  type="button"
+                  class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+              </a>
+              </div>
+             </div>
+             <div class="card m-3 p-0  " style="width:18rem">
+              <img src="./img/userM.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Daniel Cortez</h5>
+                <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+                <a href="#"><button
+                  type="button"
+                  class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+              </a>
+              </div>
+            </div>
+            <div class="card m-3 p-0  " style="width:18rem">
+              <img src="./img/userM.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Rodrigo Paliza</h5>
+                <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+                <a href="#"><button
+                  type="button"
+                  class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+              </a>
+              </div>
+            </div>
+      </div>
+      <div class="cards d-flex justify-content-center ">
+    
+      
+        <!-- <div class="card m-3" style="width: 18rem;">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> -->
+      </div>
+      
+    </section>
 
+    <!-- ENCARGADO: RODRIGO -->
+    <section>
+      <!-- Personal de C/U <------  ENCARGADO: RODRIGO -->
+    </section>
 
-<!-- ENCARGADO: NICOLAS -->
-<section>
+    <!-- ENCARGADO: NICOLAS -->
+    <section>
+      <!-- Trabajos y proyecto  ------ ENCARGADO: NICOLAS -->
+    </section>
 
-    <!-- Trabajos y proyecto  ------ ENCARGADO: NICOLAS -->
-</section>
+    <!-- ENCARGADO: NICOLAS-->
+    <section>
+      <!-- FORM ------  ENCARGADO NICOLAS -->
+    </section>
 
-
-
-<!-- ENCARGADO: NICOLAS-->
-<section>
-
-    <!-- FORM ------  ENCARGADO NICOLAS -->
-</section>
-
-
-<!--  ENCARGADO RODRIGO  -->
-<section>
-    <!-- FOOTER  ----- ENCARGADO RODRIGO -->
-</section>
-
-
-
+    <!--  ENCARGADO RODRIGO  -->
+    <section>
+      <!-- FOOTER  ----- ENCARGADO RODRIGO -->
+    </section>
 
     <!-- scriptS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- iconos -->
+  </body>
 </html>
