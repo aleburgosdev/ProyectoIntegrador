@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Creator</title>
+</head>
+<body>
+
     <!-- ENCARGADO: ALEJANDRO -->
     <section class="container vh-100" id="inicio">
       <nav
@@ -88,7 +84,7 @@
 
     <!--seccion personal  -->
 
-    <section class="container vh-100 mt-5 cont" id="nosotros">
+    <section class="container  mt-5 cont" id="nosotros">
       <h2 class="text-center pt-3 pb-3  ">Personal</h2>
 
 
@@ -177,10 +173,70 @@
       <!-- Personal de C/U <------  ENCARGADO: RODRIGO -->
     </section>
 
-    <!-- ENCARGADO: NICOLAS -->
-    <section>
-      <!-- Trabajos y proyecto  ------ ENCARGADO: NICOLAS -->
+<!-- ENCARGADO: NICOLAS -->
+<section>
+    <h1>Proyectos realizados</h1>
+    <ul class="enColumnas">
+        <li><a href="https://iurbanestudioyconstructora.com.ar/">IURBAN, estudio y constructora (Web)</a></li>
+        <li><a href="https://ceramicoslaplata.com/">Ceramicos La Plata (Web)</a></li>
+        <li><a href="https://www.inmobusqueda.com.ar/">InmoBusqueda (Web)</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.inmobusqueda.inmobusqueda&hl=es_AR&gl=US&pli=1">InmoBusqueda (App)</a></li>
+        <li><a href="https://sanicentro.com.ar/">Sanicentro Sanitarios (Web)</a></li>
+      </ul>
+</section>
+
+
+
+<!-- ENCARGADO: NICOLAS-->
+<section>
+    <h1>Consulta y Cotizaciones</h1>
+    <form id="consultaForm" onsubmit="enviarConsulta(event)">
+        <label for="destinatario">Destinatario:</label>
+        <select id="destinatario" onchange="mostrarOpciones(event)">
+            <option value="" selected>Seleccionar destinatario:</option>
+            <option value="ale" data-email="aleburgos0506@gmail.com">Alejandro Burgos</option>
+            <option value="dani" data-email="danielmaxicortez@hotmail.com">Daniel Cortez</option>
+            <option value="luisi" data-email="luisina.e.muller@gmail.com">Luisina Muller</option>
+            <option value="nico" data-email="nicolasdilorenzo91@gmail.com">Nicolás Di Lorenzo</option>
+            <option value="rodri" data-email="rodrigopaliza@gmail.com">Rodigro Paliza</option>
+            <option value="general" data-email="consulta@creator.com">General</option>
+        </select>
+        <br><br>
+        <label for="opciones">Opciones:</label>
+        <select id="opciones" name="opciones" required>
+            <option value="" disabled selected>Seleccione una opción:</option>
+        </select>
+        <br><br>
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" class="nombre" placeholder="Escriba su nombre y apellido" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="email" placeholder="Escriba su email" required>
+        <br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
+        <br><br>
+        <label for="tipoConsulta">Tipo de consulta:</label>
+        <input type="radio" id="apps" name="tipoConsulta" value="apps" required>
+        <label for="apps">Apps</label>
+        <input type="radio" id="webs" name="tipoConsulta" value="webs" required>
+        <label for="webs">Webs</label>
+        <input type="radio" id="appswebs" name="tipoConsulta" value="appswebs" required>
+        <label for="appswebs">Apps&Webs</label>
+        <br><br>
+        <label for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta" cols="60" rows="3" placeholder="Escriba su consulta" required></textarea>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
     </section>
+
+
+<!--  ENCARGADO RODRIGO  -->
+<section>
+    <!-- FOOTER  ----- ENCARGADO RODRIGO -->
+</section>
+
 
     <!-- ENCARGADO: NICOLAS-->
     <section>
@@ -193,11 +249,7 @@
     </section>
 
     <!-- scriptS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- iconos -->
-  </body>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
