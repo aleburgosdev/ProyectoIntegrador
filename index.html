@@ -43,10 +43,10 @@
                 <a class="nav-link" href="#">Desarrolladores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true"
                   >Contacto</a
                 >
               </li>
@@ -174,9 +174,9 @@
     </section>
 
 <!-- ENCARGADO: NICOLAS -->
-<section>
-    <h1>Proyectos realizados</h1>
-    <ul class="enColumnas">
+<section class="container  mt-5 cont" id="proyectos">
+  <h2 class="text-center pt-3 pb-3  ">Proyectos realizados</h2>
+        <ul class="enColumnas">
         <li><a href="https://iurbanestudioyconstructora.com.ar/">IURBAN, estudio y constructora (Web)</a></li>
         <li><a href="https://ceramicoslaplata.com/">Ceramicos La Plata (Web)</a></li>
         <li><a href="https://www.inmobusqueda.com.ar/">InmoBusqueda (Web)</a></li>
@@ -188,8 +188,9 @@
 
 
 <!-- ENCARGADO: NICOLAS-->
-<section>
-    <h1>Consulta y Cotizaciones</h1>
+<section class="container  mt-5 cont" id="contacto">
+  <h2 class="text-center pt-3 pb-3  ">Consulta y Cotizaciones</h2>
+   <div class="container d-flex justify-content-center">   
     <form id="consultaForm" onsubmit="enviarConsulta(event)">
         <label for="destinatario">Destinatario:</label>
         <select id="destinatario" onchange="mostrarOpciones(event)">
@@ -224,12 +225,15 @@
         <input type="radio" id="appswebs" name="tipoConsulta" value="appswebs" required>
         <label for="appswebs">Apps&Webs</label>
         <br><br>
+        <div class="consultaUbi">
         <label for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" cols="60" rows="3" placeholder="Escriba su consulta" required></textarea>
+        <textarea id="consulta" name="consulta" cols="50" rows="3" placeholder="Escriba su consulta" required></textarea>
+        </div>
         <br><br>
         <button type="submit">Enviar</button>
     </form>
-    </section>
+   </div>
+</section>
 
 
 <!--  ENCARGADO RODRIGO  -->

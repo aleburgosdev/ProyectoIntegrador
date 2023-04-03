@@ -215,4 +215,71 @@ h2{
             }
             } 
 
+input[type="text"].nombre {
+  background-color: burlywood;
+  width: 410px;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 3px;
+ }
+          
+input[type="email"].email {
+  background-color: burlywood;
+  width: 410px;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 3px;
+ }
+          
+input[type="tel"].telefono {
+  background-color: burlywood;
+  width: 405px;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 3px;
+ }
+
+textarea {
+  background-color: burlywood;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 3px;
+}
+
+select {
+  background-color: burlywood;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 3px;
+}
+
+button {
+  background-color: burlywood;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 3px;
+}
+          
+form {
+  background-color: rgb(217, 147, 147);
+  padding: 30px;
+  border-radius: 10px;
+  border-color: rgb(59, 7, 62);
+  border-width: 5px;
+ }
+          
+.consultaUbi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+          
+.enColumnas {
+  column-count: 3;
+  column-width: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 50px;
+}
+            
             
