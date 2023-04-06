@@ -266,9 +266,14 @@
 
 <!-- ENCARGADO: NICOLAS-->
 <section>
-    <h1>Consulta y Cotizaciones</h1>
+  <div class="fondoForm">  
+    <h2 class="text-center pt-3 pb-3">Consulta y Cotizaciones</h2>
     <form id="consultaForm" onsubmit="enviarConsulta(event)">
-        <label for="destinatario">Destinatario:</label>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3"></div>
+                <div class="col-xl-4">
+        <label for="destinatario" class="form-label">Destinatario:</label>
         <select id="destinatario" onchange="mostrarOpciones(event)">
             <option value="" selected>Seleccionar destinatario:</option>
             <option value="ale" data-email="aleburgos0506@gmail.com">Alejandro Burgos</option>
@@ -279,21 +284,24 @@
             <option value="general" data-email="consulta@creator.com">General</option>
         </select>
         <br><br>
-        <label for="opciones">Opciones:</label>
+        <label for="opciones" class="form-label">Opciones:</label>
         <select id="opciones" name="opciones" required>
             <option value="" disabled selected>Seleccione una opción:</option>
         </select>
         <br><br>
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" id="nombre" name="nombre" class="nombre" placeholder="Escriba su nombre y apellido" required>
+        <label for="nombre" class="form-label">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" class="form-input" style="text-align: left;" placeholder="Escriba su nombre y apellido" required>
         <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="email" placeholder="Escriba su email" required>
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Escriba su email" required>
         <br><br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
+        <label for="telefono" class="form-label">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
         <br><br>
-        <label for="tipoConsulta">Tipo de consulta:</label>
+        <label for="pais" class="form-label">País:</label>
+        <input type="text" id="pais" name="pais" class="form-input" placeholder="Escriba su País" required>
+        <br><br>
+        <label for="tipoConsulta" class="form-label">Tipo de consulta:</label>
         <input type="radio" id="apps" name="tipoConsulta" value="apps" required>
         <label for="apps">Apps</label>
         <input type="radio" id="webs" name="tipoConsulta" value="webs" required>
@@ -301,11 +309,15 @@
         <input type="radio" id="appswebs" name="tipoConsulta" value="appswebs" required>
         <label for="appswebs">Apps&Webs</label>
         <br><br>
-        <label for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" cols="60" rows="3" placeholder="Escriba su consulta" required></textarea>
+        <label for="consulta" class="consultaUbi">Consulta:</label>
+        <textarea id="consulta" name="consulta" rows="auto" cols="45" placeholder="Escriba su consulta" required></textarea>
         <br><br>
         <button type="submit">Enviar</button>
-    </form>
+             </div>
+             <div class="col-xl-3"></div>
+          </div>
+       </div>
+     </form>
     </section>
 
 
