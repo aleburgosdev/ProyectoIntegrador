@@ -14,37 +14,39 @@
 <body>
 
   <!-- ENCARGADO: ALEJANDRO -->
-  <section class="container vh-100" id="inicio">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light opacity transp barra">
-      <div class="container-fluid nav">
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2">
-            <li class="nav-item">
-              <a class=" active li-1" aria-current="page" href="#inicio">Inicio</a>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Desarrolladores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
-            </li>
-          </ul>
-          <div class="d-flex t-logo">
-            <a href="#nosotros"><img src="./img/logo.png " class="img-fluid w-50 logo" alt="" /></a>
+  <section id="inicio">
+    <div class="d-flex justify-content-center">      
+      <nav class="navbar navbar-expand-lg navbar-light opacity  barra">
+        <div class="container nav">
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2">
+              <li class="nav-item">
+                <a class=" active li-1" aria-current="page" href="#inicio">Inicio</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Desarrolladores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+              </li>
+            </ul>
+            <div class="d-flex t-logo">
+              <a href="#nosotros"><img src="./img/logo.png " class="img-fluid w-50 logo" alt="" /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <div class="barra-vacia"></div>
     <!-- principal -->
     <div class="contenido-principal mt-4 col">
@@ -62,7 +64,8 @@
           Hablamos el mismo idioma que tu agencia y nuestro flujo de trabajo es dinámico y ágil para obtener un
           resultado de calidad.
         </p>
-        <p>Nuestros planes de desarrollo están adaptados a varios modelos ya preestablecidos para hacerlos más
+        <p class="animacion p-3">Nuestros planes de desarrollo están adaptados a varios modelos ya preestablecidos para
+          hacerlos más
           accesibles. Sobre estos, nuestro equipo de diseño gráfico realiza una propuesta visual ajustada a la estética
           de la marca, entregando un mockup final de la web. Una vez aprobado por el cliente, continua hacia el area de
           desarrollo el cual materializará el proyecto final adaptándolo a todos los formatos.</p>
@@ -81,54 +84,57 @@
 
   <!--seccion personal  -->
 
-  <section class="container  mt-5 cont" id="nosotros">
-    <h2 class="text-center pt-3 pb-3  ">Personal</h2>
+  <section class="w-100 mt-4" id="nosotros">
+    <div class="container justify-content-center cont">
 
-
-    <div class="row   d-flex justify-content-center">
-      <div class="card m-3 p-0 " style="width:18rem">
-        <img src="./img/userF.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Luisina Muller</h5>
-          <p class="card-text">Desarrolladora Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+      <h2 class="text-center pt-3 pb-3  ">Personal</h2>
+  
+  
+      <div class="row d-flex justify-content-center">
+        <div class="card m-3 p-0 " style="width:18rem">
+          <img src="./img/userF.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luisina Muller</h5>
+            <p class="card-text">Desarrolladora Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0  " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Nicolas Di Lorenzo</h5>
-          <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0  " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nicolas Di Lorenzo</h5>
+            <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0 " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Alejandro Burgos</h5>
-          <p class="card-text">Desarrollador web full-Stack</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0 " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alejandro Burgos</h5>
+            <p class="card-text">Desarrollador web full-Stack</p>
+            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0  " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Daniel Cortez</h5>
-          <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0  " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Daniel Cortez</h5>
+            <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0  " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Rodrigo Paliza</h5>
-          <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0  " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rodrigo Paliza</h5>
+            <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -156,96 +162,45 @@
   </section>
 
   <!-- ENCARGADO: RODRIGO -->
-  <section class="about-info row d-flex justify-content-around gap-2 text-center mx-auto">
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Nicolas</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
+  <section class="container w-100 row justify-content-center gap-2 about-info text-center mx-auto mt-5 vh-100">
+    <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
+      <h2>E-commerce</h2>
+      <p>Analizamos el modelo de negocio de su compañía y ayudamos a la elección y modelado de la arquitectura necesaria
+        para tener un canal de venta digital exitoso. Creamos plataformas de e-commerce B2B y B2C integradas o no con
+        los sistemas internos de la empresa. Nos enfocamos en la experiencia de usuario o experiencia de compra, ya que
+        entendemos que no sólo se atiene al diseño estructural y estratégico de las pantallas de un sitio sino que
+        incorpora otras ramas de la tecnología para depurar, afinar y mejorar esa experiencia, siempre en pos del punto
+        de conversión..</p>
+
+      <button class="mt-4 bt-color">Ver mas...</button>
     </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Alejandro</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
+    <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
+      <h2>UX / UI</h2>
+      <p>Creamos soluciones innovadoras de alto impacto en el corto plazo, enfocándonos en la calidad de las
+        experiencias de las personas con las interfaces digitales, identificando touchpoints entre los consumidores y
+        las marcas.
+
+        Trabajamos sobre la personalidad de los productos para crear experiencias intuitivas que fascinen a los
+        usuarios.</p>
+      <button class="mt-4 bt-color">Ver mas...</button>
     </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Luisina</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
-    </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Daniel</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
-    </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Rodrigo</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
+    <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
+      <h2>E-Learning</h2>
+      <p>El principio más importante para desarrollar una plataforma de e-learning es no ver el diseño del e-learning
+        como diseño de información, sino como diseño de una experiencia.
+
+        En el último año hemos sido testigos de una transformación radical en la forma de enseñar y participar
+        académicamente, de estudiar y de asistir a clases. Esto no fue planificado ni regulado por normas o designios de
+        especialistas.
+        Por tal motivo acompañamos a nuestros clientes brindándoles consultoría tecnológica para la implementación de
+        sistemas de e-learning la cual nos permite diseñar y desarrollar plataformas LMS (Learning Management System) a
+        medida.</p>
+      <button class="mt-4 bt-color">Ver mas...</button>
     </div>
   </section>
 
   <!-- ENCARGADO: NICOLAS -->
-  <section id="proyectos">
+  <section class="vh-100 mt-5 pt-5" id="proyectos">
     <h2 class="text-center pt-3 pb-3">Proyectos realizados</h2>
     <div class="contenedor-fotos">
       <div class="columna">
@@ -330,12 +285,12 @@
 
   <!--  ENCARGADO RODRIGO  -->
   <section class="footer">
-    <footer class="bg-light py-3 gap-3">
+    <footer class="py-3 gap-3">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <img src="./img/logo.png" alt="logo" class="img-fluid w-5 mb-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, id.</p>
+            <p>Aplicaciones y Paginas Web responsive a medida</p>
           </div>
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-1">
             <h5 class="text-uppercase mb-4 font-weight-bold">Tecnologias</h5>

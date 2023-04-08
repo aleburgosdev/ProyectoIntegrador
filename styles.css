@@ -4,6 +4,25 @@ html {
 a{
   text-decoration: none;
 }
+
+/*-----------colores-----------*/
+body{
+  background-color: #fff4e0;
+}
+#nosotros{
+  background-color: #FFBF9B;
+}
+#proyectos{
+  background-color: #FFBF9B;
+}
+button{
+  background-color: #B46060;
+}
+.navbar{
+  background-color: #FFBF9B;
+}
+
+/*-----------------------------*/
 .transp {
   background-color: rgb(255, 255, 255) !important;
 }
@@ -39,13 +58,13 @@ a{
  justify-content: center;
  
 }
-/* @media(min-width:1000px) {
+@media(min-width:1000px) {
   .t-logo {
     text-align: end;
    
 
   }
-} */
+}
 
 .barra-vacia {
   padding: 2rem;
@@ -245,7 +264,7 @@ h2 {
 /*-------------FOOTER-------------*/
 
 footer {
-  background-color: #f5f5f5;
+  background-color: #FFBF9B;
   padding: 10px;
   bottom: 0;
   width: 100%;
@@ -264,21 +283,20 @@ footer {
 }
 
 .about {
-  background-image: url(./img/ey-tech-horizon-2022.jpg.rendition.450.300.jpg);
+  background-image: url(./img/stock-photo-light-pastel-background-abstract-geometric.jfif);
   background-size: cover;
-  width: 350px;
-  height: 430px;
+  height: 34%;
   flex-grow: 0;
   object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease;
-  color: white;
+  color: black;
 }
 
 .about:hover {
-  width: 450px;
+  width: 100%;
   opacity: 1;
-  filter: contrast(100%);
+  filter: contrast(110%);
 }
 .about ul {
   padding-right: 30px;
