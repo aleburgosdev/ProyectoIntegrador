@@ -39,13 +39,13 @@ a{
  justify-content: center;
  
 }
-@media(min-width:1000px) {
+/* @media(min-width:1000px) {
   .t-logo {
     text-align: end;
    
 
   }
-}
+} */
 
 .barra-vacia {
   padding: 2rem;
@@ -266,7 +266,7 @@ footer {
 .about {
   background-image: url(./img/ey-tech-horizon-2022.jpg.rendition.450.300.jpg);
   background-size: cover;
-  width: 300px;
+  width: 350px;
   height: 430px;
   flex-grow: 0;
   object-fit: cover;
