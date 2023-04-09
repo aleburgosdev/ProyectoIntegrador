@@ -340,12 +340,12 @@ button {
 }
 
 form {
-  background-color: rgb(255, 255, 255);
   padding: 40px;
   border-color: rgb(51, 20, 80);
   border-style: groove;
   border-left: 10px;
   border-right: 10px;
+  border-top: 10px;
 }
 
 .form-label {
@@ -358,7 +358,6 @@ form {
 }
 
 .form-input {
-  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   border-color: rgb(255, 255, 255);
   border-width: 3px;
@@ -379,10 +378,6 @@ form {
   padding: 50px;
 }
 
-.fondoForm {
-  background-color: rgb(255, 255, 255);
-}
-
 .contenedor-fotos {
   display: flex;
   justify-content: center;
@@ -392,11 +387,31 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 20px;
 }
 
 img {
-  width: 100%;
+  width: auto;
   max-width: 300px;
   margin-bottom: 20px;
 }
+
+#proyectos {
+  height: 100vh; 
+  margin-top: 5rem; 
+  padding-top: 3rem; 
+  padding-bottom: 3rem; 
+  overflow: auto; 
+}
+
+#proyectos h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+}
+
+.proyectos-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
