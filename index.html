@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Creator</title>
 </head>
 
@@ -74,13 +75,64 @@
           <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color zoomInDown">Mas Sobre
               Nosotros</button>
           </a>
-          <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color bt-color-s zoomInDown">Iniciar
+          <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color bt-color-s zoomInDown" data-bs-toggle="modal" data-bs-target="#miModal">Iniciar
               Sesión</button>
           </a>
         </div>
       </div>
     </div>
   </section>
+
+   <!-- ENCARGADO: Luisina -->
+   <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Iniciar sesión</h5>
+                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="Usuario"><strong>Usuario</strong></label>
+            <input type="text" placeholder="Ingresar usuario" name="Usuario" required=""><br><br> 
+            <label for="Contraseña"><strong>Contraseña</strong></label>
+            <input type="password" placeholder="Ingresar contraseña" name="Contraseña" required=""><br><br>
+            <button type="submit" class="button">Iniciar sesión</button>
+            <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
+
+            </div>
+            <div class="modal-footer">
+                <p>Aún no eres usuario?</p>
+                <button type="button" class="btn btn-primary " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">Registrarse</button>
+            </div>                
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle2" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle2">Registrarse</h5>
+                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="Usuario"><strong>Usuario</strong></label>
+                <input type="text" placeholder="Ingresar un nombre de usuario" name="Usuario" required=""><br><br> 
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" placeholder="Ingresar su correo electrónico" name="email" required=""><br><br>
+                <label for="psw"><strong>Contraseña</strong></label>
+                <input type="text" placeholder="Ingrese una contraseña" name="pwd" required=""><br><br> 
+                <label for="psw"><strong>Repita la contraseña</strong></label>
+                 <input type="password" placeholder="Confirme su contraseña" name="Contraseña" required=""><br><br>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="button" class="btn btn-primary">Registrarse</button>
+
+            </div>  
+        </div>
+    </div>
+
+</div>
+
 
   <!--seccion personal  -->
 
