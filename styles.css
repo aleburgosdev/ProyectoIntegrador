@@ -22,7 +22,9 @@ html{
 .navbar{
   position: fixed;
   z-index: 99999;
-text-align: center;
+text-align: end;
+max-width: 85rem;
+
 
 }
 .navbar>.container-fluid{
@@ -47,10 +49,11 @@ text-align: center;
   color: black;
 }
 .li-1{
-  font-weight: 700;
   font-size: 1.4rem;
   padding: 0;
-  
+  background-color:  rgb(239 137 119);
+  border-radius: .5rem;
+  color: white!important;
 }
 .transp{
   background-color: rgba(255, 255, 255, 0.659)!important;
@@ -59,6 +62,11 @@ text-align: center;
   color: #046b8e!important;
   transform: scale(1.1)
   
+}
+.li-1:hover{
+transition: all .8s;
+  background-color: #219bc3;
+color: white!important;
 }
 .texto-principal {
   max-width: 50rem;
