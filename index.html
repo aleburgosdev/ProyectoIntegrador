@@ -8,133 +8,187 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Creator</title>
 </head>
 
 <body>
 
-    <!-- ENCARGADO: ALEJANDRO -->
-    <section class="container vh-100" id="inicio">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light opacity transp barra"
-      >
-        <div class="container-fluid nav">
-          
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+  <!-- ENCARGADO: ALEJANDRO -->
+  <section class="vh-100" id="inicio">
+    <div class="d-flex justify-content-center">      
+      <nav class="navbar navbar-expand-lg navbar-light opacity  barra">
+        <div class="container nav">
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2">
               <li class="nav-item">
-                <a class="nav-link active li-1 " aria-current="page" href="#inicio"
+                <a class="nav-link active li-1" aria-current="page" href="#inicio"
                   >Inicio</a
                 >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#nosotros"
-                  >Nosotros</a
-                >
+                <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Desarrolladores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
-                  >Contacto</a
-                >
+                <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
               </li>
             </ul>
-            <div class="d-flex w-50">
-              <a href="#nosotros"><img src="./img/logo.png " class="img-fluid w-25" alt="" /></a>
+            <div class="d-flex w-25">
+              <a href="#nosotros"><img src="./img/logo.png " class="img-fluid w-50" alt="" /></a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="barra-vacia"></div>
-      <div class="contenido-principal mt-4 col">
-        <div class="imagen-p centrar">
-          <img src="./img/principal.png" class="img" alt="..." />
+    </div>
+    <div class="barra-vacia"></div>
+    <!-- principal -->
+    <div class="contenido-principal mt-4 col">
+      <div class="imagen-p centrar">
+        <img src="./img/principal.png" class="img" alt="..." />
+      </div>
+      <div class="texto-principal mt-5 centrar">
+        <h1 class="fs-3 text slideInRight">CREATOR Apps & Webs</h1>
+        <p class="animacion p-3">
+          Somos un equipo de desarrolladores con fuerte orientación comercial y amplia experiencia técnica. Trabajamos
+          junto a Pymes y grandes empresas de diversos rubros.
+          Nuestros principales diferenciales son la diversidad de tecnologías que manejamos y la versatilidad para
+          trabajar en conjunto con agencias de marketing digital para crear y optimizar sitios para campañas
+          publicitarias.
+          Hablamos el mismo idioma que tu agencia y nuestro flujo de trabajo es dinámico y ágil para obtener un
+          resultado de calidad.
+        </p>
+        <p class="animacion p-3">Nuestros planes de desarrollo están adaptados a varios modelos ya preestablecidos para
+          hacerlos más
+          accesibles. Sobre estos, nuestro equipo de diseño gráfico realiza una propuesta visual ajustada a la estética
+          de la marca, entregando un mockup final de la web. Una vez aprobado por el cliente, continua hacia el area de
+          desarrollo el cual materializará el proyecto final adaptándolo a todos los formatos.</p>
+        <div class="botones">
+
+          <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color zoomInDown">Mas Sobre
+              Nosotros</button>
+          </a>
+          <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color bt-color-s zoomInDown" data-bs-toggle="modal" data-bs-target="#miModal">Iniciar
+              Sesión</button>
+          </a>
         </div>
-        <div class="texto-principal mt-5 centrar">
-          <h1 class="fs-3 text slideInRight">CREATOR App & Weps</h1>
-          <p class="animacion p-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-            placeat rem eligendi maiores animi illum! Minima commodi tempora,
-            minus assumenda dolore maiores repudiandae explicabo natus officiis
-            deserunt distinctio! Doloremque, praesentium. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Velit placeat rem eligendi
-            maiores animi illum! Minima commodi tempora, minus assumenda dolore
-            maiores repudiandae explicabo natus officiis deserunt distinctio!
-            Doloremque, praesentium.
-          </p>
-          <a href="#nosotros"><button
-            type="button"
-            class="btn btn-primary btn-lg bt-color zoomInDown">Mas Sobre Nosotros</button>
-        </a>
       </div>
     </div>
   </section>
 
+   <!-- ENCARGADO: Luisina -->
+   <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Iniciar sesión</h5>
+                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="Usuario"><strong>Usuario</strong></label>
+            <input type="text" placeholder="Ingresar usuario" name="Usuario" required=""><br><br> 
+            <label for="Contraseña"><strong>Contraseña</strong></label>
+            <input type="password" placeholder="Ingresar contraseña" name="Contraseña" required=""><br><br>
+            <button type="submit" class="button">Iniciar sesión</button>
+            <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
+
+            </div>
+            <div class="modal-footer">
+                <p>Aún no eres usuario?</p>
+                <button type="button" class="btn btn-primary " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">Registrarse</button>
+            </div>                
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle2" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle2">Registrarse</h5>
+                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="Usuario"><strong>Usuario</strong></label>
+                <input type="text" placeholder="Ingresar un nombre de usuario" name="Usuario" required=""><br><br> 
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" placeholder="Ingresar su correo electrónico" name="email" required=""><br><br>
+                <label for="psw"><strong>Contraseña</strong></label>
+                <input type="text" placeholder="Ingrese una contraseña" name="pwd" required=""><br><br> 
+                <label for="psw"><strong>Repita la contraseña</strong></label>
+                 <input type="password" placeholder="Confirme su contraseña" name="Contraseña" required=""><br><br>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="button" class="btn btn-primary">Registrarse</button>
+
+            </div>  
+        </div>
+    </div>
+
+</div>
+
+
   <!--seccion personal  -->
 
-  <section class="container  mt-5 cont" id="nosotros">
-    <h2 class="text-center pt-3 pb-3  ">Personal</h2>
+  <section class="w-100 mt-4" id="nosotros">
+    <div class="container justify-content-center cont">
 
-
-    <div class="row   d-flex justify-content-center">
-      <div class="card m-3 p-0 " style="width:18rem">
-        <img src="./img/userF.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Luisima Muller</h5>
-          <p class="card-text">Desarrolladora Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+      <h2 class="text-center pt-3 pb-3  ">Personal</h2>
+  
+  
+      <div class="row d-flex justify-content-center">
+        <div class="card m-3 p-0 " style="width:18rem">
+          <img src="./img/userF.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luisina Muller</h5>
+            <p class="card-text">Desarrolladora Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0  " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Nicolas Di Lorenzo</h5>
-          <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0  " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nicolas Di Lorenzo</h5>
+            <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0 " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Alejandro Burgos</h5>
-          <p class="card-text">Desarrollador web full-Stack</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0 " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alejandro Burgos</h5>
+            <p class="card-text">Desarrollador web full-Stack</p>
+            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0  " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Daniel Cortez</h5>
-          <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0  " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Daniel Cortez</h5>
+            <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="card m-3 p-0  " style="width:18rem">
-        <img src="./img/userM.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Rodrigo Paliza</h5>
-          <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
-          <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
-          </a>
+        <div class="card m-3 p-0  " style="width:18rem">
+          <img src="./img/userM.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rodrigo Paliza</h5>
+            <p class="card-text">Desarrollador Web y Apps Responsive front-End</p>
+            <a href="#"><button type="button" class="btn btn-primary btn-md bt-color">Más Sobre Mi</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -162,172 +216,112 @@
   </section>
 
   <!-- ENCARGADO: RODRIGO -->
-  <section class="about-info row d-flex justify-content-around gap-2 text-center mx-auto">
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Nicolas</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
+  <section class="container w-100 row justify-content-center gap-2 about-info text-center mx-auto mt-5 vh-100">
+    <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
+      <h2>E-commerce</h2>
+      <p>Analizamos el modelo de negocio de su compañía y ayudamos a la elección y modelado de la arquitectura necesaria
+        para tener un canal de venta digital exitoso. Creamos plataformas de e-commerce B2B y B2C integradas o no con
+        los sistemas internos de la empresa. Nos enfocamos en la experiencia de usuario o experiencia de compra, ya que
+        entendemos que no sólo se atiene al diseño estructural y estratégico de las pantallas de un sitio sino que
+        incorpora otras ramas de la tecnología para depurar, afinar y mejorar esa experiencia, siempre en pos del punto
+        de conversión..</p>
+
+      <button class="mt-4 bt-color">Ver mas...</button>
     </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Alejandro</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
+    <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
+      <h2>UX / UI</h2>
+      <p>Creamos soluciones innovadoras de alto impacto en el corto plazo, enfocándonos en la calidad de las
+        experiencias de las personas con las interfaces digitales, identificando touchpoints entre los consumidores y
+        las marcas.
+
+        Trabajamos sobre la personalidad de los productos para crear experiencias intuitivas que fascinen a los
+        usuarios.</p>
+      <button class="mt-4 bt-color">Ver mas...</button>
     </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Luisiana</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
-    </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Daniel</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
-    </div>
-    <div class="about px-5 pt-2 rounded-1">
-      <h3>Rodrigo</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa distinctio ab aut sint sunt saepe quo
-        quod libero ipsa vitae dolores dolore vel velit ex est, aliquid minima consectetur.</p>
-      <ul>
-        <li>
-          <a href="#">GitHub</a>
-        </li>
-        <li>
-          <a href="#">Mail.......@gmail.com</a>
-        </li>
-        <li>
-          <a href="#">Instagram</a>
-        </li>
-      </ul>
-      <button class="mt-4 bt-color">Contactar</button>
+    <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
+      <h2>E-Learning</h2>
+      <p>El principio más importante para desarrollar una plataforma de e-learning es no ver el diseño del e-learning
+        como diseño de información, sino como diseño de una experiencia.
+
+        En el último año hemos sido testigos de una transformación radical en la forma de enseñar y participar
+        académicamente, de estudiar y de asistir a clases. Esto no fue planificado ni regulado por normas o designios de
+        especialistas.
+        Por tal motivo acompañamos a nuestros clientes brindándoles consultoría tecnológica para la implementación de
+        sistemas de e-learning la cual nos permite diseñar y desarrollar plataformas LMS (Learning Management System) a
+        medida.</p>
+      <button class="mt-4 bt-color">Ver mas...</button>
     </div>
   </section>
 
-<!-- ENCARGADO: NICOLAS -->
-<section>
-    <h1>Proyectos realizados</h1>
-    <ul class="enColumnas">
-        <li><a href="https://iurbanestudioyconstructora.com.ar/">IURBAN, estudio y constructora (Web)</a></li>
-        <li><a href="https://ceramicoslaplata.com/">Ceramicos La Plata (Web)</a></li>
-        <li><a href="https://www.inmobusqueda.com.ar/">InmoBusqueda (Web)</a></li>
-        <li><a href="https://play.google.com/store/apps/details?id=com.inmobusqueda.inmobusqueda&hl=es_AR&gl=US&pli=1">InmoBusqueda (App)</a></li>
-        <li><a href="https://sanicentro.com.ar/">Sanicentro Sanitarios (Web)</a></li>
-      </ul>
-</section>
+  <!-- ENCARGADO: NICOLAS -->
+  <section class="vh-100 mt-5 pt-5" id="proyectos">
+    <h2 class="text-center pt-3 pb-3">Proyectos realizados</h2>
+    <div class="contenedor-fotos">
+      <div class="columna">
+        <a href="https://iurbanestudioyconstructora.com.ar/" target="_blank"><img src="img/Iurban.jpg" alt="Foto 1"></a>
+        <a href="https://www.grupoanacleto.com.ar/" target="_blank"><img src="img/Anacleto.jpg" alt="Foto 2"></a>
+        <a href="https://www.libreriasacapuntas.com.ar/" target="_blank"><img src="img/Sacapuntas.jpg" alt="Foto 3"></a>
+        <a href="https://www.lupo.com.ar/" target="_blank"><img src="img/Lupo.jpg" alt="Foto 4"></a>
+      </div>
+      <div class="columna">
+        <a href="https://ceramicoslaplata.com/" target="_blank"><img src="img/Ceramicos.jpg" alt="Foto 5"></a>
+        <a href="https://primerapagina.info/" target="_blank"><img src="img/PrimeraPagina.jpg" alt="Foto 6"></a>
+        <a href="https://pet-shop-phi.vercel.app/" target="_blank"><img src="img/PetHouse.jpg" alt="Foto 7"></a>
+        <a href="https://jorrat.com.ar/" target="_blank"><img src="img/Jorrat.jpg" alt="Foto 8"></a>
+      </div>
+    </div>
+  </section>
 
-
-
-<!-- ENCARGADO: NICOLAS-->
-<section>
-    <h1>Consulta y Cotizaciones</h1>
-    <form id="consultaForm" onsubmit="enviarConsulta(event)">
-        <label for="destinatario">Destinatario:</label>
-        <select id="destinatario" onchange="mostrarOpciones(event)">
-            <option value="" selected>Seleccionar destinatario:</option>
-            <option value="ale" data-email="aleburgos0506@gmail.com">Alejandro Burgos</option>
-            <option value="dani" data-email="danielmaxicortez@hotmail.com">Daniel Cortez</option>
-            <option value="luisi" data-email="luisina.e.muller@gmail.com">Luisina Muller</option>
-            <option value="nico" data-email="nicolasdilorenzo91@gmail.com">Nicolás Di Lorenzo</option>
-            <option value="rodri" data-email="rodrigopaliza@gmail.com">Rodigro Paliza</option>
-            <option value="general" data-email="consulta@creator.com">General</option>
-        </select>
-        <br><br>
-        <label for="opciones">Opciones:</label>
-        <select id="opciones" name="opciones" required>
-            <option value="" disabled selected>Seleccione una opción:</option>
-        </select>
-        <br><br>
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" id="nombre" name="nombre" class="nombre" placeholder="Escriba su nombre y apellido" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="email" placeholder="Escriba su email" required>
-        <br><br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" class="telefono" placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
-        <br><br>
-        <label for="tipoConsulta">Tipo de consulta:</label>
-        <input type="radio" id="apps" name="tipoConsulta" value="apps" required>
-        <label for="apps">Apps</label>
-        <input type="radio" id="webs" name="tipoConsulta" value="webs" required>
-        <label for="webs">Webs</label>
-        <input type="radio" id="appswebs" name="tipoConsulta" value="appswebs" required>
-        <label for="appswebs">Apps&Webs</label>
-        <br><br>
-        <label for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" cols="60" rows="3" placeholder="Escriba su consulta" required></textarea>
-        <br><br>
-        <button type="submit">Enviar</button>
-    </form>
-    </section>
-
-
-<!--  ENCARGADO RODRIGO  -->
-<section>
-    <!-- FOOTER  ----- ENCARGADO RODRIGO -->
-</section>
 
 
   <!-- ENCARGADO: NICOLAS-->
-  <section>
-    <!-- FORM ------  ENCARGADO NICOLAS -->
+  <section id="contacto">
+     <h2 class="text-center pt-3 pb-3">Consulta</h2>
+      <form id="consultaForm" onsubmit="enviarConsulta(event)">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3"></div>
+            <div class="col-xl-4">
+              <label for="nombre" class="form-label">Nombre y Apellido:</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" style="text-align: left;" placeholder="Escriba su nombre y apellido" required>
+              <br><br>
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Escriba su email" required>
+              <br><br>
+              <label for="telefono" class="form-label">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
+              <br><br>
+              <label for="pais" class="form-label">País:</label>
+              <input type="text" id="pais" name="pais" class="form-input" placeholder="Escriba su País" required>
+              <br><br>
+              <label for="tipoConsulta" class="form-label">Tipo de consulta:</label>
+              <input type="radio" id="apps" name="tipoConsulta" value="apps" required>
+              <label for="apps">Apps</label>
+              <input type="radio" id="webs" name="tipoConsulta" value="webs" required>
+              <label for="webs">Webs</label>
+              <input type="radio" id="appswebs" name="tipoConsulta" value="appswebs" required>
+              <label for="appswebs">Apps&Webs</label>
+              <br><br>
+              <label for="consulta" class="consultaUbi">Consulta:</label>
+              <textarea id="consulta" name="consulta" rows="auto" cols="45" placeholder="Escriba su consulta" required></textarea>
+              <br><br>
+              <button type="submit" id="enviarBtn">Enviar</button>
+            </div>
+            <div class="col-xl-3"></div>
+          </div>
+        </div>
+      </form>
+
   </section>
 
   <!--  ENCARGADO RODRIGO  -->
   <section class="footer">
-    <footer class="bg-light py-3 gap-3">
+    <footer class="py-3 gap-3">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <img src="./img/logo.png" alt="logo" class="img-fluid w-5 mb-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, id.</p>
+            <p>Aplicaciones y Paginas Web responsive a medida</p>
           </div>
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-1">
             <h5 class="text-uppercase mb-4 font-weight-bold">Tecnologias</h5>
