@@ -9,7 +9,7 @@ a{
 body{
   background-color: #fff4e0;
 }
-#nosotros{
+#personal{
   background-color: #FFBF9B;
 }
 #proyectos{
@@ -108,6 +108,9 @@ text-align: center;
   color: white!important;
 }
 
+.img-barra{
+  align-items: center;
+}
 .transp {
   background-color: rgba(255, 255, 255, 0.659) !important;
 }
@@ -140,6 +143,12 @@ color: white!important;
 }
 .contenido-principal {
   text-align: center;
+padding-top: 4rem;
+}
+@media(min-width: 900px){
+ .vh{
+  height: 100vh;
+ }
 }
 h2 {
   font-size: 3rem;
