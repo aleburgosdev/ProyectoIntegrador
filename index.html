@@ -8,13 +8,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Creator</title>
 </head>
 
 <body>
 
   <!-- ENCARGADO: ALEJANDRO -->
-  <section class="vh-100" id="inicio">
+  <section class="vh" id="inicio">
     <div class="d-flex justify-content-center">      
       <nav class="navbar navbar-expand-lg navbar-light opacity  barra">
         <div class="container nav">
@@ -26,12 +27,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-2">
               <li class="nav-item">
-                <a class=" active li-1" aria-current="page" href="#inicio">Inicio</a>
+                <a class="nav-link active li-1" aria-current="page" href="#inicio"
+                  >Inicio</a
+                >
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Desarrolladores</a>
+                <a class="nav-link" href="#personal">Desarrolladores</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#proyectos">Proyectos</a>
@@ -40,8 +43,8 @@
                 <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
               </li>
             </ul>
-            <div class="d-flex t-logo">
-              <a href="#nosotros"><img src="./img/logo.png " class="img-fluid w-50 logo" alt="" /></a>
+            <div class="d-flex w-25">
+              <a href="#nosotros"><img src="./img/logo.png " class="img-fluid mb-0 p-2 w-50 img-barra" alt="" /></a>
             </div>
           </div>
         </div>
@@ -74,7 +77,7 @@
           <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color zoomInDown">Mas Sobre
               Nosotros</button>
           </a>
-          <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color bt-color-s zoomInDown">Iniciar
+          <a href="#"><button type="button" class="btn btn-primary btn-lg bt-color bt-color-s zoomInDown" data-bs-toggle="modal" data-bs-target="#miModal">Iniciar
               Sesión</button>
           </a>
         </div>
@@ -82,9 +85,60 @@
     </div>
   </section>
 
+   <!-- ENCARGADO: Luisina -->
+   <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Iniciar sesión</h5>
+                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="Usuario"><strong>Usuario</strong></label>
+            <input type="text" placeholder="Ingresar usuario" name="Usuario" required=""><br><br> 
+            <label for="Contraseña"><strong>Contraseña</strong></label>
+            <input type="password" placeholder="Ingresar contraseña" name="Contraseña" required=""><br><br>
+            <button type="submit" class="button">Iniciar sesión</button>
+            <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
+
+            </div>
+            <div class="modal-footer">
+                <p>Aún no eres usuario?</p>
+                <button type="button" class="btn btn-primary " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">Registrarse</button>
+            </div>                
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle2" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle2">Registrarse</h5>
+                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="Usuario"><strong>Usuario</strong></label>
+                <input type="text" placeholder="Ingresar un nombre de usuario" name="Usuario" required=""><br><br> 
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" placeholder="Ingresar su correo electrónico" name="email" required=""><br><br>
+                <label for="psw"><strong>Contraseña</strong></label>
+                <input type="text" placeholder="Ingrese una contraseña" name="pwd" required=""><br><br> 
+                <label for="psw"><strong>Repita la contraseña</strong></label>
+                 <input type="password" placeholder="Confirme su contraseña" name="Contraseña" required=""><br><br>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="button" class="btn btn-primary">Registrarse</button>
+
+            </div>  
+        </div>
+    </div>
+
+</div>
+
+
   <!--seccion personal  -->
 
-  <section class="w-100 mt-4" id="nosotros">
+  <section class="w-100 mt-4 pt-4" id="personal">
     <div class="container justify-content-center cont">
 
       <h2 class="text-center pt-3 pb-3  ">Personal</h2>
@@ -162,7 +216,7 @@
   </section>
 
   <!-- ENCARGADO: RODRIGO -->
-  <section class="container w-100 row justify-content-center gap-2 about-info text-center mx-auto mt-5 vh-100">
+  <section class="container w-100 row justify-content-center gap-2 about-info text-center mx-auto mt-5 vh-100" id="nosotros">
     <div class="about px-5 pt-2 rounded-3 col-11 overflow-auto">
       <h2>E-commerce</h2>
       <p>Analizamos el modelo de negocio de su compañía y ayudamos a la elección y modelado de la arquitectura necesaria
@@ -206,46 +260,36 @@
       <div class="columna">
         <a href="https://iurbanestudioyconstructora.com.ar/" target="_blank"><img src="img/Iurban.jpg" alt="Foto 1"></a>
         <a href="https://www.grupoanacleto.com.ar/" target="_blank"><img src="img/Anacleto.jpg" alt="Foto 2"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 3"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 4"></a>
+        <a href="https://www.libreriasacapuntas.com.ar/" target="_blank"><img src="img/Sacapuntas.jpg" alt="Foto 3"></a>
+        <a href="https://www.lupo.com.ar/" target="_blank"><img src="img/Lupo.jpg" alt="Foto 4"></a>
       </div>
       <div class="columna">
         <a href="https://ceramicoslaplata.com/" target="_blank"><img src="img/Ceramicos.jpg" alt="Foto 5"></a>
         <a href="https://primerapagina.info/" target="_blank"><img src="img/PrimeraPagina.jpg" alt="Foto 6"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 7"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 8"></a>
-      </div>
-      <div class="columna">
-        <a href="" target="_blank"><img src="" alt="Foto 9"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 10"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 11"></a>
-        <a href="" target="_blank"><img src="" alt="Foto 12"></a>
+        <a href="https://pet-shop-phi.vercel.app/" target="_blank"><img src="img/PetHouse.jpg" alt="Foto 7"></a>
+        <a href="https://jorrat.com.ar/" target="_blank"><img src="img/Jorrat.jpg" alt="Foto 8"></a>
       </div>
     </div>
-
   </section>
 
 
 
   <!-- ENCARGADO: NICOLAS-->
   <section id="contacto">
-    <div class="fondoForm">
-      <h2 class="text-center pt-3 pb-3">Consulta</h2>
+     <h2 class="text-center pt-3 pb-3">Consulta</h2>
       <form id="consultaForm" onsubmit="enviarConsulta(event)">
         <div class="container">
           <div class="row">
             <div class="col-xl-3"></div>
             <div class="col-xl-4">
               <label for="nombre" class="form-label">Nombre y Apellido:</label>
-              <input type="text" id="nombre" name="nombre" class="form-input" style="text-align: left;"
-                placeholder="Escriba su nombre y apellido" required>
+              <input type="text" id="nombre" name="nombre" class="form-input" style="text-align: left;" placeholder="Escriba su nombre y apellido" required>
               <br><br>
               <label for="email" class="form-label">Email:</label>
               <input type="email" id="email" name="email" class="form-input" placeholder="Escriba su email" required>
               <br><br>
               <label for="telefono" class="form-label">Teléfono:</label>
-              <input type="tel" id="telefono" name="telefono" class="form-input"
-                placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
+              <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Escriba su teléfono sin 0 ni 15" pattern="[0-9]{10}" required>
               <br><br>
               <label for="pais" class="form-label">País:</label>
               <input type="text" id="pais" name="pais" class="form-input" placeholder="Escriba su País" required>
@@ -259,8 +303,7 @@
               <label for="appswebs">Apps&Webs</label>
               <br><br>
               <label for="consulta" class="consultaUbi">Consulta:</label>
-              <textarea id="consulta" name="consulta" rows="auto" cols="45" placeholder="Escriba su consulta"
-                required></textarea>
+              <textarea id="consulta" name="consulta" rows="auto" cols="45" placeholder="Escriba su consulta" required></textarea>
               <br><br>
               <button type="submit" id="enviarBtn">Enviar</button>
             </div>
@@ -367,9 +410,7 @@
 
   <!-- scriptS -->
   <script type="text/javascript" src="index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

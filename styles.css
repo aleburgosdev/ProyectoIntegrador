@@ -9,7 +9,7 @@ a{
 body{
   background-color: #fff4e0;
 }
-#nosotros{
+#personal{
   background-color: #FFBF9B;
 }
 #proyectos{
@@ -43,8 +43,8 @@ button{
 .navbar {
   position: fixed;
   z-index: 99999;
-  text-align: center;
-  width: 90%;
+text-align: center;
+
 }
 .navbar > .container-fluid {
   justify-content: center;
@@ -96,17 +96,11 @@ button{
 .barra a {
   color: black;
 }
-.li-1 {
- 
-  padding: 0.2rem 1rem!important;
-  color: black !important;
-  transition: border 1s ease, transform 1s ease;
+.li-1{
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 0;
-  border: 2px solid #43145f ;
-  border-radius: 1rem;
-  transition: 0.8s;
+  
 }
 .li-1:hover{
   background-color: #006081;
@@ -114,12 +108,20 @@ button{
   color: white!important;
 }
 
+.img-barra{
+  align-items: center;
+}
 .transp {
   background-color: rgba(255, 255, 255, 0.659) !important;
 }
 .nav-link:hover {
   color: #046b8e !important;
   transform: scale(1.1);
+}
+.li-1:hover{
+transition: all .8s;
+  background-color: #219bc3;
+color: white!important;
 }
 .texto-principal {
   max-width: 50rem;
@@ -141,6 +143,12 @@ button{
 }
 .contenido-principal {
   text-align: center;
+padding-top: 4rem;
+}
+@media(min-width: 900px){
+ .vh{
+  height: 100vh;
+ }
 }
 h2 {
   font-size: 3rem;
@@ -340,12 +348,12 @@ button {
 }
 
 form {
-  background-color: rgb(255, 255, 255);
   padding: 40px;
   border-color: rgb(51, 20, 80);
   border-style: groove;
   border-left: 10px;
   border-right: 10px;
+  border-top: 10px;
 }
 
 .form-label {
@@ -358,7 +366,6 @@ form {
 }
 
 .form-input {
-  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   border-color: rgb(255, 255, 255);
   border-width: 3px;
@@ -379,10 +386,6 @@ form {
   padding: 50px;
 }
 
-.fondoForm {
-  background-color: rgb(255, 255, 255);
-}
-
 .contenedor-fotos {
   display: flex;
   justify-content: center;
@@ -392,11 +395,31 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 20px;
 }
 
 img {
-  width: 100%;
+  width: auto;
   max-width: 300px;
   margin-bottom: 20px;
 }
+
+#proyectos {
+  height: 100vh; 
+  margin-top: 5rem; 
+  padding-top: 3rem; 
+  padding-bottom: 3rem; 
+  overflow: auto; 
+}
+
+#proyectos h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+}
+
+.proyectos-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
