@@ -25,7 +25,7 @@ function enviarConsulta(event) {
 }
 
 
-
+//-----------------integracion de API---------------------//
 
 $(document).ready(function() {
   $.ajax({
