@@ -423,3 +423,129 @@ img {
   margin: 0 auto;
 }
 
+/* ESTILO DE LOS FORMULARIO DE INICIO DE SESION */
+
+.modal-content{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-close{
+    position:absolute;
+     top: 5px;
+    right: 5px;
+    
+}
+
+  .form {
+    background-color: white;
+    width: 500%;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  }
+
+  
+  .title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    color:  #ef8977;
+  }
+
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  ::placeholder {
+    color: transparent;
+  }
+
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 7px 15px;
+    border: none;
+    background-color: #ef8977 ;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
+  } 
+  
+  .submitBtn:hover {
+    background-color: hsl(8, 80%, 83%);
+    transform: translateY(-2px);
+  }
+
+
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color:  #ef8977 ;
+  }
+
+  .input:focus {
+    border: 2px solid #ef8977 ;
+  }
+  
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  label.error {
+    color: black;
+    font-size:small;
+    display: block;
+    padding-top: 13%;
+    padding-left: 5%;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+/* Finaliza estilo de formularios inicio de sesión */
+

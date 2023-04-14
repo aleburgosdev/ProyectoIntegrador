@@ -9,7 +9,21 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- libreria jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- validacion jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+  <!-- Usado en formularios de inicio de sesión-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+  crossorigin="anonymous"></script>
+  <!-- Para pdf -->
+  <script type="text/javascript" src="jspdf.min.js"></script>
   <title>Creator</title>
 </head>
 
@@ -87,55 +101,108 @@
   </section>
 
    <!-- ENCARGADO: Luisina -->
-   <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalTitle">Iniciar sesión</h5>
-                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
-            </div>
-            <div class="modal-body">
-                <label for="Usuario"><strong>Usuario</strong></label>
-            <input type="text" placeholder="Ingresar usuario" name="Usuario" required=""><br><br> 
-            <label for="Contraseña"><strong>Contraseña</strong></label>
-            <input type="password" placeholder="Ingresar contraseña" name="Contraseña" required=""><br><br>
-            <button type="submit" class="button">Iniciar sesión</button>
-            <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
+   
 
-            </div>
-            <div class="modal-footer">
-                <p>Aún no eres usuario?</p>
-                <button type="button" class="btn btn-primary " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">Registrarse</button>
-            </div>                
-        </div>
-    </div>
-</div>
+    <!-- Formulario de ingreso -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+              <div class="signupFrm">
+                  <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+                      <form action="" onsubmit="enviarConsulta(event)" class="form" id="primer-form">
+                          <h1 class="title">Iniciar sesión</h1>
+                              <div class="inputContainer">
+                                  <input id="nombre" name="nombre"  type="text" class="input" placeholder="a">
+                                  <label for="nombre" class="label">Usuario</label>
+                              </div><br><br>
+  
+                              <div class="inputContainer">
+                                  <input id="email" name="email" type="email" class="input" placeholder="a" >
+                                  <label for="email" class="label">Email</label>
+                              </div><br><br>
+
+                              <div class="inputContainer">
+                                  <input id="clave" name="clave" type="password" class="input" placeholder="a">
+                                  <label for="clave" class="label">Contraseña</label>
+                              </div><br><br>
+
+                              <div class="">
+                                  <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
+                              </div><br><br>
+                              
+                              <div class="d-flex gap-3  " >
+                                  <p class="pt-2">Aún no eres usuario?</p>
+                                  <!-- <button type="button" class=" btn-primary pb-2 " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">
+                                      Registrarse</button> -->
+                                  <input type="button" class="submitBtn " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal" value="Registrarse">
+                                  <button type="submit" class="submitBtn" id="inicioSesion">Ingresar</button> 
+                                   
+                                  <!-- <input id="botonIniciar" class="submitBtn" type="submit" data-bs-toggle="modal"  data-bs-target="#modal3" data-bs-dismiss="modal" value="Ingresar" > -->
+                              </div>
+                      </form>
+              </div>
+          </div>
+      </div>                
+  </div>
+<!-- Formulario de Registro -->
 <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle2" data-bs-backdrop="static">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalTitle2">Registrarse</h5>
-                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
-            </div>
-            <div class="modal-body">
-                <label for="Usuario"><strong>Usuario</strong></label>
-                <input type="text" placeholder="Ingresar un nombre de usuario" name="Usuario" required=""><br><br> 
-                <label for="email"><strong>Email</strong></label>
-                <input type="email" placeholder="Ingresar su correo electrónico" name="email" required=""><br><br>
-                <label for="psw"><strong>Contraseña</strong></label>
-                <input type="text" placeholder="Ingrese una contraseña" name="pwd" required=""><br><br> 
-                <label for="psw"><strong>Repita la contraseña</strong></label>
-                 <input type="password" placeholder="Confirme su contraseña" name="Contraseña" required=""><br><br>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="button" class="btn btn-primary">Registrarse</button>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="signupFrm">
+              <form action="" class="form" id="segundo-form">
+                  <h1 class="title">Registrarse</h1>
+                  <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
 
-            </div>  
-        </div>
-    </div>
+                  <div class="inputContainer">
+                      <input id="usuarioRegistro" name="usuarioRegistro" type="text" class="input" placeholder="a">
+                      <label for="usuarioRegistro" class="label">Usuario</label>
+                  </div><br><br>
+  
+                  <div class="inputContainer">
+                      <input id="emailRegistro" name="emailRegistro" type="email"  class="input" placeholder="a">
+                      <label for="emailRegistro" class="label">Email</label>
+                  </div><br><br>
 
+                  <div class="inputContainer">
+                      <input id="claveRegistro" name="claveRegistro" type="password" class="input" placeholder="a">
+                      <label for="claveRegistro" class="label">Contraseña</label>
+                  </div><br><br>
+  
+                  <div class="inputContainer">
+                      <input id="claveConfirm" name="claveConfirm" type="password" class="input" placeholder="a">
+                      <label for="claveConfirm" class="label">Confirmar contraseña</label>
+                  </div><br><br>
+
+                  <input id="botonRegistrar" type="submit" class="submitBtn" value="Enviar">
+                  <a href="javascript:genPDF()">Generar pdf con informacion registrada</a>
+              </form>
+          </div>
+      </div>                
+  </div>
 </div>
 
+<!-- Modal para mostrar datos de ingreso de sesión  FALTA HACER CAPTURAS DE LOS VALORES Y AGREGARLOS AL MODAL -->
+
+<div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle3" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="title">Bienvenido!</h1>
+                  <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
+
+          </div>
+          <div class="modal-body">
+              
+              <p>Lo estabamos esperando!</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      
+      </div>                
+  </div>
+</div>
+   <!-- TERMINA SECCIÓN INICIO DE SESIÓN -->
 
   <!--seccion personal  -->
 
