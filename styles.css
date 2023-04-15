@@ -372,6 +372,11 @@ form {
   width: 340px;
 }
 
+.imgForm {
+  opacity: 0.7;
+  size: auto;
+}
+
 .consultaUbi {
   display: flex;
   flex-direction: column;
@@ -389,6 +394,9 @@ form {
 .contenedor-fotos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
 }
 
 .columna {
@@ -399,7 +407,7 @@ form {
 }
 
 img {
-  width: auto;
+  height: auto;
   max-width: 300px;
   margin-bottom: 20px;
 }
@@ -409,11 +417,13 @@ img {
   margin-top: 5rem; 
   padding-top: 3rem; 
   padding-bottom: 3rem; 
-  overflow: auto; 
+  overflow: scroll; 
+  scrollbar-width: thin;
+  scrollbar-color: #fff4e0 #f1f1f1;
 }
 
 #proyectos h2 {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1; 
 }
