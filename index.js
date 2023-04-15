@@ -1,8 +1,8 @@
 function enviarConsulta(event) {
   event.preventDefault();
   const destinatario = 'consulta@creator.com';
-  const email = document.getElementById('email').value;
-  const nombre = document.getElementById('nombre').value;
+  const email = document.getElementById('emailf').value;
+  const nombre = document.getElementById('nombref').value;
   const telefono = document.getElementById('telefono').value;
   const pais = document.getElementById('pais').value;
   const tipoConsultaInputs = document.getElementsByName('tipoConsulta');
@@ -21,6 +21,7 @@ function enviarConsulta(event) {
   if (confirmacion) {
     const formulario = document.getElementById('consultaForm');
     formulario.submit();
+    PDFConsulta();
   }
 }
 
@@ -135,6 +136,57 @@ $(document).ready(function() {
       }
   )
 
+  $("#consultaForm").validate(
+    {
+        rules: {
+            nombref: {
+                required:  true,
+                minlength: 3,
+            },
+            emailf: {
+                required: true,
+                email: true
+            },
+            telefono: {
+               required: true,
+               minlength: 10
+            },
+            pais: {
+                required: true,
+                minlength: 3
+             },
+             consulta: {
+              required: true,
+              minlength: 3
+           }
+
+       },
+       messages: {
+            nombref: {
+                required: "El campo es requerido",
+                minlength: "El nombre de usuario debe tener al menos 3 letras"
+            },
+            emailf: {
+                required: "El campo es requerido",
+                email: "El email no tiene el formato requerido"
+            },
+            telefono: {
+                required: "El campo es requerido",
+                minlength: "Debe contener al menos 10 numeros"
+            },
+            pais: {
+                required: "El campo es requerido",
+                minlength: "Ingrese un País"
+            },
+            consulta: {
+              required: "El campo es requerido",
+              minlength: "Ingrese su consulta"
+
+          },
+            
+       }
+    }
+)
 });
 
 
@@ -154,5 +206,19 @@ function genPDF(){
   doc.save("Midocumento.pdf")
 }
 
-
+function PDFConsulta(){
+  var doc= new jsPDF();
+  let nombre = document.getElementById("nombref").value;
+  let email = document.getElementById("emailf").value;
+  let telefono = document.getElementById("telefono").value;
+  let pais = document.getElementById("pais").value;
+  let consulta = document.getElementById("consulta").value;
+ 
+  doc.text("Nombre y Apellido: "+ nombre,10,20);
+  doc.text("Email: "+ email,10,30);
+  doc.text("Teléfono: "+ telefono,10,40);
+  doc.text("País: "+ pais,10,50);
+  doc.text("Consulta: "+ consulta,10,60);
+  doc.save("Miconsulta.pdf")
+}
 
