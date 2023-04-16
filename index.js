@@ -109,7 +109,8 @@ $(document).ready(function() {
               },
               claveConfirm: {
                   required: true,
-                  minlength: 7
+                  minlength: 7,
+                  equalTo:"#claveRegistro"
                }
 
          },
@@ -128,8 +129,8 @@ $(document).ready(function() {
               },
               claveConfirm: {
                   required: "Confirme la contraseña ingresada",
-                  minlength: "La contraseña debe contener al menos 7 caracteres"
-
+                  minlength: "La contraseña debe contener al menos 7 caracteres",
+                  equalTo: "Las contraseñas deben ser iguales"
               }
               
          }

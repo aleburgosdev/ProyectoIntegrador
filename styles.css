@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,10 +21,35 @@ button{
   background-color: #B46060;
 }
 .navbar-c{
-  background-color: #ffc09b98;
+  background-color: #ffc09bee;
+}
+.navbar-nav{
+  align-items: center;
 }
 
-/*-----------------------------*/
+
+.formStyle{
+  background-color: #FFBF9B;
+}
+/*-------------text----------------*/
+body{
+  font-family: "Lato";
+}
+
+#personal{
+  font-size: 1.1rem;
+}
+
+.navbar{
+  font-size: 1.3rem;
+}
+
+.about p{
+  font-size: 1.1rem;
+}
+
+
+/*---------------------------------*/
 .transp {
   background-color: rgb(255, 255, 255) !important;
 }
@@ -43,9 +70,7 @@ button{
 }
 .navbar {
   position: fixed;
-  z-index: 99999;
-text-align: center;
-
+  z-index: 99999; 
 }
 .navbar > .container-fluid {
   justify-content: center;
@@ -69,8 +94,11 @@ text-align: center;
 }
 @media(min-width:991px) {
   .img-barra{
-    max-width: 50%;
+    max-width: 25%;
   }
+}
+.w-50{
+  text-align: end;
 }
 .t-logo{
  justify-content: center;
@@ -79,8 +107,6 @@ text-align: center;
 @media(min-width:1000px) {
   .t-logo {
     text-align: end;
-   
-
   }
 }
 
@@ -111,9 +137,7 @@ text-align: center;
 .bt-color-s:hover{
   background-color: #ef8977;
 }
-.barra a {
-  color: black;
-}
+
 .li-1{
   font-weight: 700;
   font-size: 1.4rem;
@@ -138,7 +162,7 @@ text-align: center;
 }
 .li-1:hover{
 transition: all .8s;
-  background-color: #219bc3;
+background-color: #219bc3;
 color: white!important;
 }
 .texto-principal {
@@ -149,6 +173,8 @@ color: white!important;
   animation-name: slideInLeft;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+  font-family: "Lato";
+  font-size: 1.1rem;
 }
 .cont {
   max-width: 70rem;
@@ -161,15 +187,13 @@ color: white!important;
 }
 .contenido-principal {
   text-align: center;
-padding-top: 4rem;
 }
-@media(min-width: 900px){
- .vh{
-  height: 100vh;
- }
-}
+
+
 h2 {
+  font-family: "Lato";
   font-size: 3rem;
+  font-weight: 700;
 }
 
 /*cards*/
@@ -178,6 +202,7 @@ h2 {
   -webkit-box-shadow: -1px 2px 12px -1px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: -1px 2px 12px -1px rgba(0, 0, 0, 0.55);
   transition: border 1s ease, transform 1s ease;
+  background-color: #B46060;
 }
 .card:hover {
   transform: scale(1.1);
@@ -390,6 +415,11 @@ form {
   width: 340px;
 }
 
+.imgForm {
+  opacity: 0.7;
+  size: auto;
+}
+
 .consultaUbi {
   display: flex;
   flex-direction: column;
@@ -407,9 +437,12 @@ form {
 .contenedor-fotos {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
 }
 
-.columna {
+ .columna {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,7 +450,7 @@ form {
 }
 
 img {
-  width: auto;
+  height: auto;
   max-width: 300px;
   margin-bottom: 20px;
 }
@@ -427,11 +460,13 @@ img {
   margin-top: 5rem; 
   padding-top: 3rem; 
   padding-bottom: 3rem; 
-  overflow: auto; 
+  overflow: scroll; 
+  scrollbar-width: thin;
+  scrollbar-color: #fff4e0 #f1f1f1;
 }
 
 #proyectos h2 {
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1; 
 }
