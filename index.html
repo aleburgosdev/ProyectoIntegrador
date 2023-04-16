@@ -127,13 +127,14 @@
                                   <input type="checkbox" checked="checked" name="remember"> Recordar usuario 
                               </div><br><br>
                               
-                              <div class="d-flex gap-3  " >
-                                  <p class="pt-2">Aún no eres usuario?</p>
+                              <div class="d-flex gap-3" >
+                                  <p class="align-self-center pt-3">Aún no eres usuario?</p>
                                   <!-- <button type="button" class=" btn-primary pb-2 " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal">
                                       Registrarse</button> -->
-                                  <input type="button" class="submitBtn " data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal" value="Registrarse">
-                                  <button type="submit" class="submitBtn" id="inicioSesion">Ingresar</button> 
-                                   
+                                  <div class="d-flex justify-content-between gap-3">
+                                    <input type="button" class="submitBtn mb-4" data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal" value="Registrarse">
+                                    <button type="submit" class="submitBtn mb-4" id="inicioSesion">Ingresar</button> 
+                                  </div>                
                                   <!-- <input id="botonIniciar" class="submitBtn" type="submit" data-bs-toggle="modal"  data-bs-target="#modal3" data-bs-dismiss="modal" value="Ingresar" > -->
                               </div>
                       </form>
@@ -169,9 +170,10 @@
                       <input id="claveConfirm" name="claveConfirm" type="password" class="input" placeholder="a">
                       <label for="claveConfirm" class="label">Confirmar contraseña</label>
                   </div><br><br>
-
-                  <input id="botonRegistrar" type="submit" class="submitBtn" value="Enviar">
-                  <a href="javascript:genPDF()">Generar pdf con informacion registrada</a>
+                  <div class="d-flex">
+                    <a href="javascript:genPDF()" class="align-self-center">Generar pdf con informacion registrada</a>
+                    <input id="botonRegistrar" type="submit" class="submitBtn mb-4" value="Enviar">
+                  </div>
               </form>
           </div>
       </div>                
@@ -206,7 +208,7 @@
   <section class="w-100 mt-4 pt-4" id="personal">
     <div class="container justify-content-center cont">
 
-      <h2 class="text-center pt-3 pb-3">Staff Creator</h2>
+      <h2 class="text-center pt-3 pb-3 ">Staff Creator</h2>
   
   
       <div class="row d-flex justify-content-center">
