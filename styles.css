@@ -483,6 +483,13 @@ img {
   scroll-behavior: smooth;
 }
 
+#usuarioSaludo{
+  font-family: "Lato";
+  font-weight: bold;
+
+  
+}
+
 
 .signupFrm {
     display: flex;
@@ -600,5 +607,7 @@ img {
     margin-top: 5%;
     font-weight: bolder;
 }
+
+
 /* Finaliza estilo de formularios inicio de sesión */
 

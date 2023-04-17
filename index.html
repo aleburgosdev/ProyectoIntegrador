@@ -101,7 +101,7 @@
           <div class="modal-content">
               <div class="signupFrm">
                   <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
-                      <form action="" onsubmit="enviarConsultaR(event)" class="form" id="primer-form">
+                      <form action="" onsubmit="return false;" class="form" id="primer-form">
                           <h1 class="title">Iniciar sesión</h1>
                               <div class="inputContainer">
                                   <input id="nombre" name="nombre"  type="text" class="input" placeholder="a">
@@ -128,7 +128,7 @@
                                       Registrarse</button> -->
                                   <div class="d-flex justify-content-between gap-3">
                                     <input type="button" class="submitBtn mb-4" data-bs-toggle="modal"  data-bs-target="#modal2" data-bs-dismiss="modal" value="Registrarse">
-                                    <button type="submit" class="submitBtn mb-4" data-bs-toggle="modal"  data-bs-target="#modal3" data-bs-dismiss="modal" id="inicioSesion">Ingresar</button> 
+                                    <button type="submit" class="submitBtn mb-4" data-bs-toggle="modal"  data-bs-target="#modal3" data-bs-dismiss="modal" id="inicioSesion" onclick="saludar(event)">Ingresar</button> 
                                   </div>                
                                   <!-- <input id="botonIniciar" class="submitBtn" type="submit" data-bs-toggle="modal"  data-bs-target="#modal3" data-bs-dismiss="modal" value="Ingresar" > -->
                               </div>
@@ -149,22 +149,22 @@
                   <div class="inputContainer">
                       <input id="usuarioRegistro" name="usuarioRegistro" type="text" class="input" placeholder="a">
                       <label for="usuarioRegistro" class="label">Usuario</label>
-                  </div><br><br>
+                  </div><br>
   
                   <div class="inputContainer">
                       <input id="emailRegistro" name="emailRegistro" type="email"  class="input" placeholder="a">
                       <label for="emailRegistro" class="label">Email</label>
-                  </div><br><br>
+                  </div><br>
 
                   <div class="inputContainer">
                       <input id="claveRegistro" name="claveRegistro" type="password" class="input" placeholder="a">
                       <label for="claveRegistro" class="label">Contraseña</label>
-                  </div><br><br>
+                  </div><br>
   
                   <div class="inputContainer">
                       <input id="claveConfirm" name="claveConfirm" type="password" class="input" placeholder="a">
                       <label for="claveConfirm" class="label">Confirmar contraseña</label>
-                  </div><br><br>
+                  </div><br>
                   <div class="d-flex">
                     <a href="javascript:genPDF()" class="align-self-center">Generar pdf con informacion registrada</a>
                     <input id="botonRegistrar" type="submit" class="submitBtn mb-4" value="Enviar">
@@ -175,19 +175,17 @@
   </div>
 </div>
 
-<!-- Modal para mostrar datos de ingreso de sesión  FALTA HACER CAPTURAS DE LOS VALORES Y AGREGARLOS AL MODAL -->
+<!-- Modal para mostrar datos de ingreso de sesión -->
 
 <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle3" data-bs-backdrop="static">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
+      <div class="modal-content ">
           <div class="modal-header">
               <h1 class="title">Bienvenido!</h1>
                   <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="close"></button>
-
           </div>
           <div class="modal-body">
-              
-              <p>Lo estabamos esperando!</p>
+              <input type="text" id="usuarioSaludo" class="border-0 text-uppercase">  
           </div>
           <div class="modal-footer">
               <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Cerrar</button>
@@ -208,11 +206,11 @@
   
       <div class="row d-flex justify-content-center">
         <div class="card m-3 p-0 " style="width:18rem">
-          <img src="./img/userF.jpg" class="card-img-top" alt="...">
+          <img src="./img/Luisi.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-uppercase">Luisina Muller</h5>
             <p class="card-text text-light">Desarrolladora Web y Apps Responsive front-End</p>
-            <a href="#"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
+            <a href="https://www.linkedin.com/in/luisina-muller-2a500b15b/"><button type="button" class="btn btn-md bt-color">Más Sobre Mi</button>
             </a>
           </div>
         </div>

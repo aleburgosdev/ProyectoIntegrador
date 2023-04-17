@@ -223,3 +223,11 @@ function PDFConsulta(){
   doc.save("Miconsulta.pdf")
 }
 
+//Función para saludar al usuario que ingresa
+function saludar(event){
+  event.preventDefault();
+  let nombre = document.getElementById("nombre").value;
+  document.getElementById("usuarioSaludo").value = nombre;
+  
+}
+
